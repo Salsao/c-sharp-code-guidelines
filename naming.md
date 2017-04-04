@@ -135,7 +135,7 @@ O nomes de _Classes_ e _Structs_ devem estar no singular e utilizar palavras sub
 
 ### Interfaces
 
-Use adjetivos ou substântivos para nomes de _Interfaces_. Interfaces têm seu nome abreviado com a letra I capitalizada respeitando-se as regras de capitalização.
+Use adjetivos ou substântivos para nomes de _Interfaces_. Interfaces têm seu nome abreviado com a letra I respeitando-se as regras de capitalização.
 
 ```C#
     // Substântivos.
@@ -143,7 +143,7 @@ Use adjetivos ou substântivos para nomes de _Interfaces_. Interfaces têm seu n
     interface ICustomAttributeProvider { }
 
     // Adjetivos.
-    intercace IPersistable { }
+    interface IPersistable { }
 ```
 
 ### Methods
