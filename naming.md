@@ -228,17 +228,17 @@ Use nomes semânticamente interessantes e evite utilizar palavras reservadas da 
 
 Identificador | Escopo | Casing | Gramática | Exemplo
 --- | --- | --- | --- | ---
-`Namespace` | * | `PascalCase` | substantivo | `namespace System.Security`
+`Namespace` | * | `PascalCase` | substantivo | `namespace Ninject.Web.Common`
 `Class` | * | `PascalCase` | substântivo | `class BinaryReader`
 `Struct` | * | `PascalCase` | substântivo | `struct Book`
 `Enum` | * | `PascalCase` | substântivo | `enum FileMode { Append, Create }`
 `Interface` | * | `PascalCase` | adjetivo ou substântivo sufixado com "I" | `interface IEnumerable`
-`Method` | * | `PascalCase` | verbo | `byte[] ReadBytes(int count)`
+`Method` | * | `PascalCase` | verbo | `byte[] Read(int count)`
 `Parameter` | | `camelCase` |  adjetivo ou substântivo | `long Seek(int offset, SeekOrigin origin)`
 `Property` | * | `PascalCase` | adjetivo ou substântivo, plural para coleções | `long Length { get; set; }`
-`Field` | private | `camelCase` | adjetivo ou substântivo, plural para coleções | `private List<User> users;`
-`Event` | * | `PascalCase` | verbo flexionado temporalmente | `event EventHandler<ExitedEventArgs> Exited;`
-`Delegate` | * | `PascalCase` | nome do evento sufixado com _EventHandler_ | `delegate int Exited(string message);`
+`Field` | private | `camelCase` | adjetivo ou substântivo, plural para coleções | `List<User> users`
+`Event` | * | `PascalCase` | verbo flexionado temporalmente | `event EventHandler<PaintedEventArgs> Painted`
+`Delegate` | * | `PascalCase` | nome do evento sufixado com _EventHandler_ | `delegate int PaintedEventHandler(object sender, PaintedEventArgs e)`
 
 ## Referência
 
