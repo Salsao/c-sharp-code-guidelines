@@ -142,6 +142,8 @@ Considere nomear a _Property_ com o mesmo nome de seu tipo.
     }
 ```
 
+O uso de _Fields_ é limitado ao escopo `private`. Para armazenamento de valores nos escopos `protected`, `internal` e `public` utilize apenas _Properties_.
+
 ### Events
 
 _Events_ estão relacionados a ações que ocorream ou ainda ocorrerão. Use verbos ou frases verbais flexionados temporalmente para para indicar o momento em que a ação ocorre para nomes de _Events_.
@@ -224,18 +226,17 @@ Use nomes semânticamente interessantes e evite utilizar palavras reservadas da 
 
 ## Tabela de Referência
 
-Identificador | Visibilidade | Casing | Gramática | Exemplo
+Identificador | Escopo | Casing | Gramática | Exemplo
 --- | --- | --- | --- | ---
 `Namespace` | * | `PascalCase` | substantivo | `namespace System.Security`
-`Class` | * | `PascalCase` | substântivo | `class StreamReader`
+`Class` | * | `PascalCase` | substântivo | `class BinaryReader`
 `Struct` | * | `PascalCase` | substântivo | `struct Book`
-`Enum` | * | `PascalCase` | substântivo | `enum Color { Black, White }`
+`Enum` | * | `PascalCase` | substântivo | `enum FileMode { Append, Create }`
 `Interface` | * | `PascalCase` | adjetivo ou substântivo sufixado com "I" | `interface IEnumerable`
-`Method` | * | `PascalCase` | verbo | `abstract byte Seek() { }`
-`Parameter` | * | `camelCase` |  adjetivo ou substântivo | `public static int ToInt32(string value);`
-`Property` | * | `PascalCase` | adjetivo ou substântivo, plural para coleções | `int Length { get; set; }`
-`Field` | public, internal, protected | PascalCase | adjetivo ou substântivo, plural para coleções | `public TimeSpan InfiniteTimeout;`
-`Field` | private | `camelCase` | adjetivo ou substântivo, plural para coleções | `private TimeSpan InfiniteTimeout;`
+`Method` | * | `PascalCase` | verbo | `byte[] ReadBytes(int count)`
+`Parameter` | | `camelCase` |  adjetivo ou substântivo | `long Seek(int offset, SeekOrigin origin)`
+`Property` | * | `PascalCase` | adjetivo ou substântivo, plural para coleções | `long Length { get; set; }`
+`Field` | private | `camelCase` | adjetivo ou substântivo, plural para coleções | `private List<User> users;`
 `Event` | * | `PascalCase` | verbo flexionado temporalmente | `event EventHandler<ExitedEventArgs> Exited;`
 `Delegate` | * | `PascalCase` | nome do evento sufixado com _EventHandler_ | `delegate int Exited(string message);`
 
