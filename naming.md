@@ -153,12 +153,16 @@ _Events_ estão relacionados a ações que ocorream ou ainda ocorrerão. Use ver
     event EventHandler<PaintedEventArgs> Painted;
 ```
 
+#### Event Handlers
+
 _Event Handlers_ (_delegates_ utilizados com tipos de eventos) são sufixados com a frase "_EventHandler_" e seus dois parâmetros devem ser nomeados "_sender_" e "_e_".
 
 ```C#
     delegate void PaintingEventHandler(object sender, PaintingEventArgs e);
     delegate void PaintedEventHandler(object sender, PaintedEventArgs e);
 ```
+
+#### Event Arguments
 
 _Types_ que representam argumentos específicos de _Events_ devem possuir o nome do _Event_ sufixado com a frase "_EventArgs_".
 
