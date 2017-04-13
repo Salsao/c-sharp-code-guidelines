@@ -53,13 +53,13 @@ namespace SomeCompany.SomeApp.Data.Repository
         // Constants
         // Fields
         // Auto-Properties
-        // Delegates
         // Events
-        // Enums
+        // Delegates
         // Constructors
         // Finalizers (Destructors)
         // Complex-Properties
         // Methods
+        // Enums
         // Structs
         // Interfaces
         // Classes
