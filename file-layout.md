@@ -1,6 +1,15 @@
-# Organização
+# 1. Organização
 
-## Pastas e arquivos
+<!-- TOC -->
+
+- [1. Organização](#1-organização)
+    - [1.1. Pastas e arquivos](#11-pastas-e-arquivos)
+        - [1.1.1. Exemplo](#111-exemplo)
+    - [1.2. Classes](#12-classes)
+
+<!-- /TOC -->
+
+## 1.1. Pastas e arquivos
 
 Tipos devem ser armazenadas em um arquivo com o o nome do tipo declarado e com a extensão `.cs`.
 
@@ -8,7 +17,7 @@ Um arquivo poderá conter apenas um tipo declarado e deverá ser armazenado numa
 
 Tipos aninhados (_nested types_) ou declarados dentro de outros tipos (_inner types_) são permitidos e nestes casos o arquivo deverá possuir o nome do tipo declarado externo declarado no _namespace_.
 
-### Exemplo
+### 1.1.1. Exemplo
 
 Dada a seguinte classe:
 
@@ -32,7 +41,7 @@ seu arquivo deverá estar alocado em uma das seguintes maneiras:
 
 normalmente sendo a primeira pasta o nome do arquivo de projeto.
 
-## Classes
+## 1.2. Classes
 
 Membros de classe deverão ser organizados conforme o tipo do membro e sua visibilidade de seguinte forma:
 
