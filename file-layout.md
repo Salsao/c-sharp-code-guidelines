@@ -31,3 +31,42 @@ seu arquivo deverá estar alocado em uma das seguintes maneiras:
 ```
 
 normalmente sendo a primeira pasta o nome do arquivo de projeto.
+
+## Classes
+
+Membros de classe deverão ser organizados conforme o tipo do membro e sua visibilidade de seguinte forma:
+
+```C#
+namespace SomeCompany.SomeApp.Data.Repository
+{
+    public class FooRepository
+    {
+        // Constants
+        // Fields
+        // Auto-Properties
+        // Delegates
+        // Events
+        // Enums
+        // Constructors
+        // Finalizers (Destructors)
+        // Complex-Properties
+        // Methods
+        // Structs
+        // Interfaces
+        // Classes
+    }
+}
+```
+
+> ___Auto-Properties___ são propriedades com _getter_ ou _setter_ simples, sem implementação de código. ___Complex-Properties___ são propriedades com _getter_ ou _setter_ com implementação de código.
+
+Para cada tipo de membro ordene as declarações por sua visibilidade:
+
+```Plain
+public
+internal
+protected
+private
+```
+
+Membros estáticos deverão ser declarado acima dos membros não estáticos de mesmo tipo.
